@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    
+}
+:root{
+        --oq:white;
+        --qora:black;
+  --header:#2B3844;
+  --bg:#202C36;
+}
+.dark{
+    --oq:black;
+    --qora:white;
+--header:#202C36;
+--bg:#2B3844;
+}
+header{
+    padding: 23px 0;
+    background-color: var(--header);
+}
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header h2{
+    color: var(--oq);
+}
+.btn{
+    background-color: var(--header);
+    color: var(--oq);
+    border: none;
+    font-size: 18px;
+}
+main{
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.hero{
+    padding: 50px 0;
+}
+input{
+    background-color: var(--header);
+    border: none;
+width: 480px;
+height: 56px;
+font-size: 18px;
+
+color: var(--oq);
+
+    padding: 15px;
+}
+
+.card{
+    width: 264px;
+    height: 250px;
+    background-color: var(--header);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card h2{
+    color: var(--oq);   
+    margin-top: 15px;
+}
+.ota{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px    ;
+}
+@media(
+    max-width:768px
+)
+{
+    .ota{
+        justify-content: center;
+    }
+    header{
+        padding: 23px;
+
+    }
+    .hero{
+        text-align: center;
+    }
+    input{
+        width: 90%;
+    }
+}
